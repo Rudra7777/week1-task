@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choclate</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="name">CHOCLATE.COM</div>
+        <div id="cart">Cart: </div>
+        <div id="cart_value">0</div>
+
+    </header>
+    <center>
+        <div class="container">
+            <div class="box1">
+                <img src="5star.jfif" alt="" height="75%">
+                <div class="box4 ">
+                    <div class="product_name ">
+                        5 star
+                    </div>
+                    <div class="merge ">
+                        <div class="price ">
+                            <h3>Rs.10/-</h3>
+                        </div>
+
+                        <div class="container1 ">
+
+                            <button class="button1 " onclick="func1() ">+</button>
+                            <div id="value1">0</div>
+                            <button class="button2 " onclick="func2() ">-</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="box2 ">
+                <img src="kitkat.jfif" alt="" height="75%">
+                <div class="box5 ">
+                    <div class="product_name ">
+                        KitKat
+                    </div>
+                    <div class="merge">
+                        <div class="price ">
+                            <h3>Rs.30/-</h3>
+                        </div>
+
+                        <div class="container1 ">
+
+                            <button class="button1 " onclick="func3() ">+</button>
+                            <div id="value2">0</div>
+                            <button class="button2 " onclick="func4() ">-</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="box3 ">
+                <img src="chocopie.jfif" alt="" height="75%">
+                <div class="box6 ">
+                    <div class="product_name ">
+                        ChocoPie
+                    </div>
+                    <div class="merge">
+                        <div class="price ">
+                            <h3>Rs.10/-</h3>
+                        </div>
+
+                        <div class="container1 ">
+
+                            <button class="button1 " onclick="func5() ">+</button>
+                            <div id="value3">0</div>
+                            <button class="button2 " onclick="func6() ">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script>
+        let count1 = 0;
+        let count2 = 0;
+        let count3 = 0;
+        let x = document.getElementById("value1")
+        let y = document.getElementById("value2")
+        let z = document.getElementById("value3")
+        let a = document.getElementById("cart_value")
+
+        function func1() {
+            count1 = count1 + 1;
+            x.innerHTML = count1;
+            a.innerHTML = count1 + count2 + count3;
+        }
+
+        function func2() {
+            if (count1 >= 1) {
+                count1 = count1 - 1;
+                x.innerHTML = count1;
+            }
+            a.innerHTML = count1 + count2 + count3;
+        }
+
+        function func3() {
+            count2 = count2 + 1;
+            y.innerHTML = count2;
+            a.innerHTML = count1 + count2 + count3;
+        }
+
+        function func4() {
+            if (count2 >= 1) {
+                count2 = count2 - 1;
+                y.innerHTML = count2;
+            }
+            a.innerHTML = count1 + count2 + count3;
+        }
+
+        function func5() {
+            count3 = count3 + 1;
+            z.innerHTML = count3;
+            a.innerHTML = count1 + count2 + count3;
+        }
+
+        function func6() {
+            if (count3 >= 1) {
+                count3 = count3 - 1;
+                z.innerHTML = count3;
+            }
+            a.innerHTML = count1 + count2 + count3;
+        }
+    </script>
+
+
+</body>
+
+</html>
