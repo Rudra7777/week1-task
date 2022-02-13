@@ -21,19 +21,19 @@
                     
                     .name {
                         padding-left: 4vw;
-                        font-size: 2cm;
+                        font-size: 5rem;
                     }
                     
                     #cart {
                         align-self: center;
                         padding-left: 40vw;
-                        font-size: 1cm;
+                        font-size: 2.5rem;
                         font-weight: bold;
                     }
                     
                     #cart_value {
                         align-self: center;
-                        font-size: 1cm;
+                        font-size: 2.5rem;
                         font-weight: bold;
                     }
                     /*boxes css*/
@@ -44,7 +44,7 @@
                         flex-wrap: wrap;
                         justify-content: space-evenly;
                         margin-top: 10vh;
-                        width: 80vw;
+                        width: 90vw;
                         margin: auto;
                         height: auto;
                     }
@@ -81,24 +81,27 @@
                     
                     .box4 {
                         display: flex;
-                        width: 22vw;
+                        width: auto;
                         flex-direction: column;
+                        flex: 1 1 100px;
                         border-top: 4px solid black;
                         background-color: #48dbfb;
                     }
                     
                     .box5 {
                         display: flex;
-                        width: 22vw;
+                        width: auto;
                         flex-direction: column;
+                        flex: 1 1 100px;
                         border-top: 4px solid black;
                         background-color: #48dbfb;
                     }
                     
                     .box6 {
                         display: flex;
-                        width: 22vw;
+                        width: auto;
                         flex-direction: column;
+                        flex: 1 1 100px;
                         border-top: 4px solid black;
                         background-color: #48dbfb;
                     }
@@ -106,6 +109,8 @@
                     
                     .container1 {
                         display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
                         align-self: flex-end;
                         padding: 2vw;
                     }
@@ -116,7 +121,7 @@
                         align-items: center;
                         width: 3vw;
                         height: 2.5vw;
-                        font-size: 200%;
+                        font-size: 2rem;
                         font-weight: bold;
                         background-color: #A3CB38;
                     }
@@ -128,11 +133,12 @@
                     #value1,
                     #value2,
                     #value3 {
-                        padding-left: 0.1vw;
-                        padding-right: 0.1vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                         width: 3vw;
                         height: 2.5vw;
-                        font-size: 200%;
+                        font-size: 2rem;
                         font-weight: bold;
                         background-color: white;
                         text-align: center;
@@ -144,7 +150,7 @@
                         align-items: center;
                         width: 3vw;
                         height: 2.5vw;
-                        font-size: 200%;
+                        font-size: 2rem;
                         font-weight: bold;
                         background-color: #EA2027;
                     }
