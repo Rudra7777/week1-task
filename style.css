@@ -1,180 +1,197 @@
-                    * {
-                        margin: 0;
-                        padding: 0;
-                        box-sizing: border-box;
-                    }
-                    
-                    body {
-                        background-color: #353b48;
-                    }
-                    /*header css*/
-                    
-                    .header {
-                        display: flex;
-                        flex-direction: row;
-                        justify-self: flex-start;
-                        align-items: center;
-                        width: auto;
-                        height: 8vw;
-                        background-color: #0652DD;
-                    }
-                    
-                    .name {
-                        padding-left: 4vw;
-                        font-size: 5rem;
-                    }
-                    
-                    #cart {
-                        align-self: center;
-                        padding-left: 40vw;
-                        font-size: 2.5rem;
-                        font-weight: bold;
-                    }
-                    
-                    #cart_value {
-                        align-self: center;
-                        font-size: 2.5rem;
-                        font-weight: bold;
-                    }
-                    /*boxes css*/
-                    
-                    .container {
-                        display: flex;
-                        flex-direction: row;
-                        flex-wrap: wrap;
-                        justify-content: space-evenly;
-                        margin-top: 10vh;
-                        width: 90vw;
-                        margin: auto;
-                        height: auto;
-                    }
-                    
-                    .box1 {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        height: 60vh;
-                        border: 4px solid black;
-                        flex: 1 1 200px;
-                        margin: 40px;
-                    }
-                    
-                    .box2 {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 60vh;
-                        border: 4px solid black;
-                        flex: 1 1 200px;
-                        margin: 40px;
-                    }
-                    
-                    .box3 {
-                        display: flex;
-                        align-items: center;
-                        flex-direction: column;
-                        height: 60vh;
-                        border: 4px solid black;
-                        flex: 1 1 200px;
-                        margin: 40px;
-                    }
-                    
-                    .box4 {
-                        display: flex;
-                        width: auto;
-                        flex-direction: column;
-                        flex: 1 1 100px;
-                        border-top: 4px solid black;
-                        background-color: #48dbfb;
-                    }
-                    
-                    .box5 {
-                        display: flex;
-                        width: auto;
-                        flex-direction: column;
-                        flex: 1 1 100px;
-                        border-top: 4px solid black;
-                        background-color: #48dbfb;
-                    }
-                    
-                    .box6 {
-                        display: flex;
-                        width: auto;
-                        flex-direction: column;
-                        flex: 1 1 100px;
-                        border-top: 4px solid black;
-                        background-color: #48dbfb;
-                    }
-                    /*counter css*/
-                    
-                    .container1 {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: flex-start;
-                        align-self: flex-end;
-                        padding: 2vw;
-                    }
-                    
-                    .button1 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 3vw;
-                        height: 2.5vw;
-                        font-size: 2rem;
-                        font-weight: bold;
-                        background-color: #A3CB38;
-                    }
-                    
-                    .button1:hover {
-                        transform: scale(1.15);
-                    }
-                    
-                    #value1,
-                    #value2,
-                    #value3 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 3vw;
-                        height: 2.5vw;
-                        font-size: 2rem;
-                        font-weight: bold;
-                        background-color: white;
-                        text-align: center;
-                    }
-                    
-                    .button2 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 3vw;
-                        height: 2.5vw;
-                        font-size: 2rem;
-                        font-weight: bold;
-                        background-color: #EA2027;
-                    }
-                    
-                    .button2:hover {
-                        transform: scale(1.15);
-                    }
-                    /*merge(price+ counter) css*/
-                    
-                    .merge {
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                        align-items: center;
-                    }
-                    /*price css*/
-                    
-                    h3 {
-                        font-size: 0.85cm;
-                    }
-                    /*product_name css*/
-                    
-                    .product_name {
-                        align-self: center;
-                        font-size: 1cm;
-                        font-weight: bold;
-                    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    body {
+        background-color: #353b48;
+    }
+    /*header css*/
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-start;
+        align-items: center;
+        width: auto;
+        height: 8vw;
+        background-color: #0652dd;
+    }
+    
+    .name {
+        padding-left: 4vw;
+        font-size: 5rem;
+    }
+    
+    #cart {
+        align-self: center;
+        padding-left: 40vw;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    
+    #cart_value {
+        align-self: center;
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    /*boxes css*/
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10vh;
+        max-width: 90vw;
+        margin-left: 10rem;
+        height: auto;
+    }
+    
+    .box1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+        width: 33rem;
+        border: 4px solid black;
+        margin: 4rem;
+    }
+    
+    .box2 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        width: 33rem;
+        border: 4px solid black;
+        margin: 4rem;
+    }
+    
+    .box3 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        width: 33rem;
+        border: 4px solid black;
+        margin: 4rem;
+    }
+    
+    .box4 {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        flex: 1 1 10rem;
+        border-top: 4px solid black;
+        background-color: #48dbfb;
+    }
+    
+    .box5 {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        flex: 1 1 10rem;
+        border-top: 4px solid black;
+        background-color: #48dbfb;
+    }
+    
+    .box6 {
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        flex: 1 1 10rem;
+        border-top: 4px solid black;
+        background-color: #48dbfb;
+    }
+    /*counter css*/
+    
+    .container1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-self: flex-end;
+        padding: 2vw;
+    }
+    
+    .button1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3vw;
+        height: 2.5vw;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: #a3cb38;
+    }
+    
+    .button1:hover {
+        transform: scale(1.15);
+    }
+    
+    #value1,
+    #value2,
+    #value3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3vw;
+        height: 2.5vw;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: white;
+        text-align: center;
+    }
+    
+    .button2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3vw;
+        height: 2.5vw;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: #ea2027;
+    }
+    
+    .button2:hover {
+        transform: scale(1.15);
+    }
+    /*merge(price+ counter) css*/
+    
+    .merge {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /*price css*/
+    
+    h3 {
+        font-size: 0.85cm;
+    }
+    /*product_name css*/
+    
+    .product_name {
+        align-self: center;
+        font-size: 1cm;
+        font-weight: bold;
+    }
+    /* img css*/
+    
+    img {
+        height: 65%;
+        width: 80%;
+    }
+    /*media queries*/
+    
+    @media only screen and (max-width: 1300px) {
+        html {
+            font-size: 50%;
+        }
+    }
